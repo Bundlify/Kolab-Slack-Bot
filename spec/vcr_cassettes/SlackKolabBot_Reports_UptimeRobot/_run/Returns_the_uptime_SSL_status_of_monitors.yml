@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.uptimerobot.com/v2/getMonitors
+    body:
+      encoding: US-ASCII
+      string: monitors=<%= ENV['UPTIMEROBOT_MONITORS'] %>&custom_uptime_ranges=1534241694_1534328094&response_times=1&response_times_average=1440&api_key=<%= ENV['UPTIMEROBOT_API_KEY'] %>&format=json&noJsonCallback=1
+    headers:
+      User-Agent:
+      - Ruby UptimeRobot Client 0.2.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 Aug 2018 10:14:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '487'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4d1d117a9b88387976e5436bb3c891521534328094; expires=Thu, 15-Aug-19
+        10:14:54 GMT; path=/; domain=.uptimerobot.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"48b-n/N+5wjfZUTPyJmctrgQ8CDwNaw"
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      X-Response-Time:
+      - '26.65'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 44aae5a199e36a5b-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"stat":"ok","pagination":{"offset":0,"limit":50,"total":2},"monitors":[{"id":779265497,"friendly_name":"Bundlify
+        Marketing","url":"https://www.bundlify.com/?uptimerobot","type":1,"sub_type":"","keyword_type":null,"keyword_value":"","http_username":"","http_password":"","port":"","interval":60,"status":2,"ssl":{"brand":"Amazon","product":"Amazon","expires":1564747200},"create_datetime":1501440369,"custom_uptime_ranges":"100.000","response_times":[{"datetime":1534291200,"value":109},{"datetime":1534204800,"value":68}],"average_response_time":"88.500","responsetime_length":2,"responsetimes":[]},{"id":779265512,"friendly_name":"Bundlify
+        Style Guide","url":"https://style.bundlify.com/uptime-check","type":1,"sub_type":"","keyword_type":null,"keyword_value":"","http_username":"","http_password":"","port":"","interval":300,"status":2,"ssl":{"brand":"Let''s
+        Encrypt","product":"Let''s Encrypt Authority X3","expires":1538137832},"create_datetime":1501440399,"custom_uptime_ranges":"100.000","response_times":[{"datetime":1534291200,"value":232},{"datetime":1534204800,"value":331}],"average_response_time":"281.500","responsetime_length":2,"responsetimes":[]}]}'
+    http_version: 
+  recorded_at: Wed, 15 Aug 2018 10:14:55 GMT
+recorded_with: VCR 4.0.0
