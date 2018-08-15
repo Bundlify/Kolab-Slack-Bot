@@ -3,6 +3,7 @@
   "description": "Report daily stats about Stripe & UptimeRobot into your chosen slack channel.",
   "repository": "https://github.com/Bundlify/Kolab-Slack-Bot",
   "keywords": ["slack", "bot", "stripe", "uptimerobot"],
+  "logo": "https://www.bundlify.com/images/mark.png",
   "scripts": {
   },
   "env": {
