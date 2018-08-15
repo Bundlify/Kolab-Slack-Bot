@@ -39,6 +39,12 @@ jobs:
       # run tests!
       - run:
           name: run tests
+          environment:
+            SLACK_API_TOKEN: https://api.slack.com/bot-users
+            SLACK_CHANNEL: "#_bots"
+            UPTIMEROBOT_API_KEY: https://uptimerobot.com/dashboard#mySettings
+            UPTIMEROBOT_MONITORS: 000000000-000000001-000000002
+            STRIPE_SECRET_KEY: StripeAPIKey
           command: |
             mkdir /tmp/test-results
             TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)"
