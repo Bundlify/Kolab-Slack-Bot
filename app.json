@@ -17,6 +17,7 @@
     },
     "SLACK_CHANNEL": {
       "description": "The channel for the bot to output its daily reports in Slack.",
+      "value": "#staff",
       "required": true
     },
     "UPTIMEROBOT_API_KEY": {
