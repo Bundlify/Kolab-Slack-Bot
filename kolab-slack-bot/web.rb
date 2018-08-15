@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-module SlackKolabBot
+module KolabSlackBot
   class Web < Sinatra::Base
     get '/' do
       'Kolab Brötlokski - Slack Bot is Online'

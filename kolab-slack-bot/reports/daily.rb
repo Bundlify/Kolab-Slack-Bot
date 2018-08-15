@@ -1,4 +1,4 @@
-module SlackKolabBot
+module KolabSlackBot
   module Reports
     class Daily
       def self.run(channel: '#_bots')
@@ -9,8 +9,8 @@ module SlackKolabBot
       def self.text
         [
           "📊📋 *Daily Report:* 📋📊",
-          "*UptimeRobot*\n#{SlackKolabBot::Reports::UptimeRobot.run}",
-          "*Stripe*\n#{SlackKolabBot::Reports::Stripe.run}"
+          "*UptimeRobot*\n#{KolabSlackBot::Reports::UptimeRobot.run}",
+          "*Stripe*\n#{KolabSlackBot::Reports::Stripe.run}"
         ].join("\n\n")
       end
 

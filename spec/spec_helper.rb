@@ -5,7 +5,7 @@ require 'simplecov'
 SimpleCov.start
 
 require 'slack-ruby-bot/rspec'
-require 'slack-kolab-bot'
+require 'kolab-slack-bot'
 
 require 'webmock/rspec'
 require 'vcr'

@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe SlackKolabBot::Bot do
+describe KolabSlackBot::Bot do
   def app
-    SlackKolabBot::Bot.instance
+    KolabSlackBot::Bot.instance
   end
 
   subject { app }

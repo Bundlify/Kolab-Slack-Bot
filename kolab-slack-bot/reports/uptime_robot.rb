@@ -1,6 +1,6 @@
 require 'uptimerobot'
 
-module SlackKolabBot
+module KolabSlackBot
   module Reports
     class UptimeRobot
       def self.run

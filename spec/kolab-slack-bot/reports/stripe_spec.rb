@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SlackKolabBot::Reports::Stripe, vcr: { erb: true } do
+describe KolabSlackBot::Reports::Stripe, vcr: { erb: true } do
   let(:start_time){ VCR.current_cassette&.originally_recorded_at || Time.current }
 
   before do
@@ -9,7 +9,7 @@ describe SlackKolabBot::Reports::Stripe, vcr: { erb: true } do
 
   context '#run' do
     it 'returns total and daily customer count' do
-      expect(SlackKolabBot::Reports::Stripe.run).to eq("_Total Customers_: 194\n_New Customers in last day_: 10")
+      expect(KolabSlackBot::Reports::Stripe.run).to eq("_Total Customers_: 194\n_New Customers in last day_: 10")
     end
   end
 end

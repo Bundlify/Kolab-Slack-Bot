@@ -1,6 +1,6 @@
 require 'stripe'
 
-module SlackKolabBot
+module KolabSlackBot
   module Reports
     class Stripe
       def self.run

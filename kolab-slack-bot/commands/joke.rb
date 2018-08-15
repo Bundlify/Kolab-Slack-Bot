@@ -1,4 +1,4 @@
-module SlackKolabBot
+module KolabSlackBot
   module Commands
     class Joke < SlackRubyBot::Commands::Base
       command 'tell me a joke' do |client, data, _match|

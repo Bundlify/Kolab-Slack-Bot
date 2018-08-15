@@ -1,0 +1,7 @@
+require 'slack-ruby-bot'
+require 'kolab-slack-bot/bot'
+require 'kolab-slack-bot/commands/joke'
+require 'kolab-slack-bot/commands/daily_report'
+require 'kolab-slack-bot/reports/daily'
+require 'kolab-slack-bot/reports/stripe'
+require 'kolab-slack-bot/reports/uptime_robot'
