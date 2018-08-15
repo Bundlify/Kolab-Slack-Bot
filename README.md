@@ -1,4 +1,4 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![CircleCI](https://circleci.com/gh/Bundlify/Kolab-Slack-Bot.svg?style=svg)](https://circleci.com/gh/Bundlify/Kolab-Slack-Bot)
 
 # Kolab Slack Bot
 
