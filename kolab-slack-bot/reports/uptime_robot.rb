@@ -7,8 +7,8 @@ module KolabSlackBot
         ::UptimeRobot::Client.new(api_key: ENV['UPTIMEROBOT_API_KEY']).getMonitors({
           monitors: ENV['UPTIMEROBOT_MONITORS'],
           custom_uptime_ranges: [
-            Time.now.to_i - 86_400,
-            Time.now.to_i
+            time_now_to_i - 86_400,
+            time_now_to_i
           ].join('_'),
           response_times: 1,
           response_times_average: 1_440
@@ -22,6 +22,11 @@ module KolabSlackBot
             ].join(' | ')
           ].join(' ')
         end.join("\n")
+      end
+
+      private
+      def self.time_now_to_i
+        @time_now ||= Time.now.to_i
       end
     end
   end
