@@ -1,6 +1,8 @@
 {
   "name": "Kolab Slack Bot",
-  "description": "Report daily ",
+  "description": "Report daily stats about Stripe & UptimeRobot into your chosen slack channel.",
+  "repository": "https://github.com/Bundlify/Kolab-Slack-Bot",
+  "keywords": ["slack", "bot", "stripe", "uptimerobot"],
   "scripts": {
   },
   "env": {
@@ -14,16 +16,33 @@
       "required": true
     },
     "SLACK_API_TOKEN": {
+      "description": "Slack API Token - for your bot to talk to slack.",
+      "required": true
+    },
+    "SLACK_CHANNEL": {
+      "description": "The channel for the bot to output its daily reports in Slack.",
       "required": true
     },
     "UPTIMEROBOT_API_KEY": {
+      "description": "UptimeRobot API Key - For uptime stats and when SSL certs are due to expire.",
+      "required": true
+    },
+    "UPTIMEROBOT_MONITORS": {
+      "description": "The monitor numbers from uptime robot separated by hyphens",
       "required": true
     },
     "STRIPE_SECRET_KEY": {
+      "description": "Your stripe Secret Key",
       "required": true
     }
   },
   "formation": {
+    "web": {
+      "quantity": 1
+    },
+    "worker": {
+      "quantity": 0
+    }
   },
   "addons": [
     "scheduler"

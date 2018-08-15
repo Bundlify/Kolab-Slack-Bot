@@ -1,3 +1,5 @@
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 # Kolab Slack Bot
 
 Made following https://github.com/slack-ruby/slack-ruby-bot/blob/master/TUTORIAL.md
@@ -24,7 +26,7 @@ _New Customers in last day_: 10
 
 Push to heroku, populate your environmental configuration based on what you find in `.env.example`.
 
-Then setup `bundle exec rake kolab:daily_report` as a scheduled task to run daily.
+Then setup the rake task `bundle exec rake kolab:daily_report` as a scheduled task to run daily.
 
 ## What it reports
 
