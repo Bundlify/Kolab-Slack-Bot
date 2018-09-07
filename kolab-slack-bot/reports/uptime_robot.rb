@@ -11,7 +11,8 @@ module KolabSlackBot
             time_now_to_i
           ].join('_'),
           response_times: 1,
-          response_times_average: 1_440
+          response_times_average: 1_440,
+          ssl: true
         })['monitors'].collect do |monitor|
           [
             "_#{monitor['friendly_name']}_:",
